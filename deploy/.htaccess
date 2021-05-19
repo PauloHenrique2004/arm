@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    RewriteCond %{REQUEST_URI} !^/deploy.php?$
+    RewriteCond %{REQUEST_URI} !^/deploy.py?$
+
+    Options +ExecCGI 
+    AddHandler cgi-script .py 
+</IfModule>

@@ -1,0 +1,42 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: avo
+	Theme URI: http://
+	Description: The Multi-Purpose Template
+	Author: ui-themez
+	Author URI: http://themeforest.net/user/ui-themez
+	Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("/css/site/bootstrap.min.css");
+
+/* == animate css == */
+@import url("/css/site/animate.css");
+
+/* == ionicons icon font == */
+@import url("/css/site/ionicons.min.css");
+
+/* == pe-icon-7-stroke == */
+@import url("/css/site/pe-icon-7-stroke.css");
+
+/* == fontawesome icon font == */
+@import url("/css/site/fontawesome-all.min.css");
+
+/* == justifiedGallery.min == */
+@import url("/css/site/justifiedGallery.min.css");
+
+/* == YouTubePopUp == */
+@import url("/css/site/YouTubePopUp.css");
+
+/* == slick carousel == */
+@import url("/css/site/slick.css");
+@import url("/css/site/slick-theme.css");
+
+/* == swiper.min font == */
+@import url("/css/site/swiper.min.css");
