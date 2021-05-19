@@ -81,7 +81,7 @@ class PagesController extends AppController
         $this->loadModel('Servicos');
         $this->loadModel('Blog');
         $this->loadModel('Videos');
-        $this->loadModel('Exposicoes');
+        $this->loadModel('Depoimentos');
         $this->loadModel("Destaques");
 
 
@@ -89,7 +89,7 @@ class PagesController extends AppController
         $sobre = $this->Abouts->find('all');
         $sliders = $this->Sliders->find('all')->order(['id' => 'desc']);
         $blog = $this->Blog->find('all')->order(['id DESC'])->limit(3);
-        $exposicoes = $this->Exposicoes->find()->order(['id DESC'])->limit(6);
+        $depoimentos = $this->Depoimentos->find()->order(['id DESC']);
         $videos = $this->Videos->find('all')->limit(1);
         $destaques = $this->Destaques->find('all')->order(['id DESC']);
 //               $nome = $this->Empresas->Servicos->find('all')->where(['Empresas.id' => 'Servicos.empresa_id']);
@@ -101,7 +101,7 @@ class PagesController extends AppController
         $this->set('sobre', $sobre);
         $this->set('sliders', $sliders);
         $this->set('blog',$blog );
-        $this->set('exposicoes',$exposicoes );
+        $this->set('depoimentos',$depoimentos );
         $this->set('videos',$videos );
         $this->set('destaques', $destaques);
         $this->set('title',$title );
