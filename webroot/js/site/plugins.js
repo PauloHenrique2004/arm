@@ -4633,8 +4633,8 @@ function() {
 
 
 /*!
- * simpleParallax.min - simpleParallax is a simple JavaScript library that gives your website parallax animations on any images, 
- * @date: 01-02-2020 23:1:26, 
+ * simpleParallax.min - simpleParallax is a simple JavaScript library that gives your website parallax animations on any images,
+ * @date: 01-02-2020 23:1:26,
  * @version: 5.3.0,
  * @link: https://simpleparallax.com/
  */
@@ -10290,7 +10290,7 @@ function() {
 /*!
  * GSAP 3.2.4
  * https://greensock.com
- * 
+ *
  * @license Copyright 2020, GreenSock. All rights reserved.
  * Subject to the terms at https://greensock.com/standard-license or for Club GreenSock members, the agreement issued with that membership.
  * @author: Jack Doyle, jack@greensock.com

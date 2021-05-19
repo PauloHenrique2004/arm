@@ -34,7 +34,7 @@
               <tr>
                   <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                   <th scope="col"><?= $this->Paginator->sort('link') ?></th>
-                  <th scope="col"><?= $this->Paginator->sort('empresa_id') ?></th>
+                  <th scope="col" class="actions text-center"><?= __('Actions') ?></th>
               </tr>
             </thead>
             <tbody>
@@ -42,9 +42,8 @@
                 <tr>
                   <td><?= $this->Number->format($video->id) ?></td>
                   <td><?= h($video->link) ?></td>
-                    <td><?= $video->has('empresa') ? $this->Html->link($video->empresa->nome_empresa, ['controller' => 'Empresas', 'action' => 'view', $video->empresa->id]) : '' ?></td>
-
-                    <td class="actions text-right">
+                  <td class="actions text-right">
+                      <?= $this->Html->link(__('View'), ['action' => 'view', $video->id], ['class'=>'btn btn-info btn-xs']) ?>
                       <?= $this->Html->link(__('Edit'), ['action' => 'edit', $video->id], ['class'=>'btn btn-warning btn-xs']) ?>
                       <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $video->id], ['confirm' => __('Are you sure you want to delete # {0}?', $video->id), 'class'=>'btn btn-danger btn-xs']) ?>
                   </td>

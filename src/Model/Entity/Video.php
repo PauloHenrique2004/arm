@@ -8,7 +8,6 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string|null $link
- * @property int $empresa_id
  */
 class Video extends Entity
 {
@@ -22,7 +21,6 @@ class Video extends Entity
      * @var array
      */
     protected $_accessible = [
-        'link' => true,
-        'empresa_id' => true
+        'link' => true
     ];
 }

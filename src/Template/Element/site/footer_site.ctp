@@ -86,6 +86,8 @@
 
 <!-- custom scripts -->
 <script src="/js/site//scripts.js"></script>
+<?= $this->fetch('scriptBottom') ?>
+
 
 </body>
 

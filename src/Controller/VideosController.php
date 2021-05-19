@@ -19,13 +19,6 @@ class VideosController extends AppController
      */
     public function index()
     {
-
-        $this->paginate =[
-            'contain'=> ['Empresas'],
-            'order' => ['id' => 'desc'],
-            'limit' => [10]
-        ];
-
         $videos = $this->paginate($this->Videos);
 
         $this->set(compact('videos'));
@@ -65,8 +58,7 @@ class VideosController extends AppController
             }
             $this->Flash->error(__('The {0} could not be saved. Please, try again.', 'Video'));
         }
-        $empresas = $this->Videos->Empresas->find('list',['limit' => 200]);
-        $this->set(compact('video','empresas'));
+        $this->set(compact('video'));
     }
 
 
@@ -91,8 +83,7 @@ class VideosController extends AppController
             }
             $this->Flash->error(__('The {0} could not be saved. Please, try again.', 'Video'));
         }
-        $empresas = $this->Videos->Empresas->find('list',['limit' => 200]);
-        $this->set(compact('video','empresas'));
+        $this->set(compact('video'));
     }
 
 

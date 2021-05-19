@@ -168,25 +168,9 @@
                     <p> <?= strlen($servico->descricao) > 70 ? substr($servico->descricao,0, 70)."..." : $servico->descricao ?></p>
                 </div>
             </div>
-            <?php endif; ?>
-
+             <?php endif; ?>
             <?php endforeach; ?>
 
-<!--            <div class="col-lg-4 wow fadeInUp" data-wow-delay=".6s">-->
-<!--                <div class="step-item xcolor">-->
-<!--                    <span class="icon pe-7s-phone"></span>-->
-<!--                    <h6>Web & App Development</h6>-->
-<!--                    <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            <div class="col-lg-4 wow fadeInUp" data-wow-delay=".9s">-->
-<!--                <div class="step-item xbottom">-->
-<!--                    <span class="icon pe-7s-magic-wand"></span>-->
-<!--                    <h6>Graphic Design</h6>-->
-<!--                    <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
         <div class="smore custom-font">
             <a href="#0">Ver mais</a>
@@ -243,14 +227,15 @@
                     <div class="col-lg-9">
                         <div class="video-box">
                             <div class="tit-text">
-                                <h3 class="wow" data-splitting>Showreel</h3>
+                                <h3 class="wow" data-splitting>Video</h3>
                             </div>
                             <div class="wow imago">
                                 <div class="img">
                                     <img src="/images/vid.jpg" alt="">
                                 </div>
+                                <?php foreach ($videos as $video): ?>
                                 <div class="vid-icon">
-                                    <a class="vid" href="https://vimeo.com/127203262">
+                                    <a class="vid" href="<?= $video->link ?>">
                                         <div class="vid-butn">
                                                 <span class="icon">
                                                     <i class="fas fa-play"></i>
@@ -258,6 +243,7 @@
                                         </div>
                                     </a>
                                 </div>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                     </div>
@@ -529,4 +515,5 @@
 </section>
 
 <!-- ==================== End Blog ==================== -->
+
 

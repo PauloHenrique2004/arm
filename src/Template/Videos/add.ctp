@@ -30,7 +30,6 @@
             <div class="box-body">
               <?php
                 echo $this->Form->control('link');
-                echo $this->Form->control('empresa_id',['options' => $empresas]);
               ?>
             </div>
             <!-- /.box-body -->

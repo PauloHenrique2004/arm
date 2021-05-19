@@ -24,8 +24,6 @@
             <dd><?= h($video->link) ?></dd>
             <dt scope="row"><?= __('Id') ?></dt>
             <dd><?= $this->Number->format($video->id) ?></dd>
-            <dt scope="row"><?= __('Empresa Id') ?></dt>
-            <dd><?= $this->Number->format($video->empresa_id) ?></dd>
           </dl>
         </div>
       </div>
