@@ -122,6 +122,9 @@ class ServicosController extends AppController
         $single = $this->Servicos->get($id);
         $this->set('single', $single);
 
+        $this->loadModel('ServicoImagens');
+        $imagens = $this->ServicoImagens->find('all')->where(['ServicoImagens.servico_id' => $id]);
+        $this->set('imagens', $imagens);
     }
 
     public function beforeFilter(Event $event){
