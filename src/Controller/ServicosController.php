@@ -117,7 +117,7 @@ class ServicosController extends AppController
         $this->set('servicos', $servicos);
     }
 
-    public function single($id){
+    public function single($nome, $id){
         $this->viewBuilder()->setLayout('site');
         $single = $this->Servicos->get($id);
         $this->set('single', $single);
