@@ -147,7 +147,7 @@
             <?php if ($key == 0):?>
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".3s">
                 <div class="step-item xtop">
-                    <span class="icon pe-7s-gleam"></span>
+                    <span><img src="/icono-logo2.png" style="width: 40%; margin-bottom: 30px;"></span>
                     <h6><?= $servico->nome ?></h6>
                    <p> <?= strlen($servico->descricao) > 70 ? substr($servico->descricao,0, 70)."..." : $servico->descricao ?></p>
                 </div>
@@ -155,7 +155,7 @@
             <?php elseif ($key == 1): ?>
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay=".6s">
                     <div class="step-item xcolor">
-                        <span class="icon pe-7s-phone"></span>
+                        <span><img src="/icono-logo3.png" style="width: 40%; margin-bottom: 30px;"></span>
                         <h6><?= $servico->nome ?></h6>
                         <p> <?= strlen($servico->descricao) > 70 ? substr($servico->descricao,0, 70)."..." : $servico->descricao ?></p>
                     </div>
@@ -163,7 +163,7 @@
              <?php else: ?>
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".9s">
                 <div class="step-item xbottom">
-                    <span class="icon pe-7s-magic-wand"></span>
+                    <span><img src="/icono-logo2.png" style="width: 40%; margin-bottom: 30px;"></span>
                     <h6><?= $servico->nome ?></h6>
                     <p> <?= strlen($servico->descricao) > 70 ? substr($servico->descricao,0, 70)."..." : $servico->descricao ?></p>
                 </div>
@@ -193,29 +193,29 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="item no-bord">
                             <span class="icon pe-7s-smile"></span>
-                            <h3 class="custom-font"><span class="count">2400</span></h3>
-                            <p class="wow txt" data-splitting>Clientes Felizes</p>
+                            <h3 class="custom-font">+<span class="count">300</span></h3>
+                            <p class="wow txt" data-splitting>Clientes Atendidos</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="item">
                             <span class="icon pe-7s-portfolio"></span>
-                            <h3 class="custom-font"><span class="count">133</span></h3>
+                            <h3 class="custom-font">+<span class="count">640</span></h3>
                             <p class="wow txt" data-splitting>Projetos Finalizados</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="item">
-                            <span class="icon pe-7s-cloud-download"></span>
-                            <h3 class="custom-font"><span class="count">254</span> k</h3>
-                            <p class="wow txt" data-splitting>Files Downloaded</p>
+                            <span class="icon pe-7s-users"></span>
+                            <h3 class="custom-font">+<span class="count">254</span></h3>
+                            <p class="wow txt" data-splitting>Colaboradores</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="item">
-                            <span class="icon pe-7s-medal"></span>
-                            <h3 class="custom-font"><span class="count">46</span></h3>
-                            <p class="wow txt" data-splitting>Award Win</p>
+                            <span class="icon pe-7s-date"></span>
+                            <h3 class="custom-font">+<span class="count">12</span></h3>
+                            <p class="wow txt" data-splitting>Anos de atuação</p>
                         </div>
                     </div>
                 </div>

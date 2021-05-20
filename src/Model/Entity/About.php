@@ -42,6 +42,6 @@ class About extends Entity
         'descricao_valor' => true,
         'capa' => true,
         'capa_dir' => true,
-        'sobre_imagens' => true
+        'video' => true
     ];
 }

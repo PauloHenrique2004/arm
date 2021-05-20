@@ -90,7 +90,6 @@ class AboutsTable extends Table
 
         $validator
             ->scalar('descricao_visao')
-            ->maxLength('descricao_visao', 255)
             ->allowEmptyString('descricao_visao');
 
         $validator
@@ -100,7 +99,6 @@ class AboutsTable extends Table
 
         $validator
             ->scalar('descricao_valor')
-            ->maxLength('descricao_valor', 255)
             ->allowEmptyString('descricao_valor');
 
         $validator

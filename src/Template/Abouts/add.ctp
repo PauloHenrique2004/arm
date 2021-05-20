@@ -38,6 +38,7 @@
               echo $this->Form->control('titulo_valor');
               echo $this->Form->control('descricao_valor');
               echo $this->Form->control('capa',['type' => 'file']);
+              echo $this->Form->control('video');
               ?>
             </div>
             <!-- /.box-body -->

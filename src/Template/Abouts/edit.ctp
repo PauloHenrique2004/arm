@@ -38,6 +38,7 @@
                 echo $this->Form->control('titulo_valor');
                 echo $this->Form->control('descricao_valor');
                 echo $this->Form->control('capa',['type' => 'file']);
+                echo $this->Form->control('video');
               ?>
             </div>
             <!-- /.box-body -->
@@ -60,6 +61,5 @@
         var editor = CKEDITOR.replace( 'descricao_missao' );
         var editor = CKEDITOR.replace( 'descricao_visao' );
         var editor = CKEDITOR.replace( 'descricao_valor' );
-
     </script>
 <?php  $this->end();

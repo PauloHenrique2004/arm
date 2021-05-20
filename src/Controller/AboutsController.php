@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Abouts Controller
@@ -106,4 +107,24 @@ class AboutsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+
+     public function about($id){
+        $this->viewBuilder()->setLayout('site');
+        $about = $this->Abouts->get($id);
+        $this->set('about', $about);
+
+        $this->loadModel('Depoimentos');
+        $depoimentos = $this->Depoimentos->find('all');
+        $this->set('depoimentos', $depoimentos);
+
+     }
+
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['about']);
+    }
+
+
 }
