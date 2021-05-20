@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Servicos Controller
@@ -106,4 +107,26 @@ class ServicosController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function todos(){
+        $this->paginate = [
+            'limit'=> 6,
+        ];
+        $this->viewBuilder()->setLayout('site');
+        $servicos = $this->paginate($this->Servicos);
+        $this->set('servicos', $servicos);
+    }
+
+    public function single($id){
+        $this->viewBuilder()->setLayout('site');
+        $single = $this->Servicos->get($id);
+        $this->set('single', $single);
+
+    }
+
+    public function beforeFilter(Event $event){
+        $this->Auth->allow(['todos', 'single']);
+    }
+
+
 }

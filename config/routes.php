@@ -45,8 +45,9 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/como-funciona/:id', ['controller' => 'Abouts', 'action' => 'about'])->setPass(['id']);
     $routes->connect('/empresa/:nome_empresa/:id', ['controller' => 'Empresas', 'action' => 'empresa'])->setPass(['nome_empresa','id']);
     $routes->connect('/categoria/:categoria/:id', ['controller' => 'Servicos', 'action' => 'categoria'])->setPass(['categoria','id']);
+    $routes->connect('/servico/:id', ['controller' => 'Servicos', 'action' => 'single'])->setPass(['id']);
     $routes->connect('/pesquisa/', ['controller' => 'Servicos', 'action' => 'pesquisa']);
-    $routes->connect('/todos/', ['controller' => 'Servicos', 'action' => 'todos']);
+    $routes->connect('/servico/', ['controller' => 'Servicos', 'action' => 'todos']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
