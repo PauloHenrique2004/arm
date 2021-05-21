@@ -40,6 +40,7 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'site']);
     $routes->connect('/admin', ['controller' => 'Users', 'action' => 'login']);
     $routes->connect('/contato', ['controller' => 'Contacts', 'action' => 'contato']);
+    $routes->connect('/blog', ['controller' => 'Blog', 'action' => 'blog']);
 
     $routes->connect('/sobre-nos/:id', ['controller' => 'Abouts', 'action' => 'about'])->setPass(['id']);
     $routes->connect('/como-funciona/:id', ['controller' => 'Abouts', 'action' => 'about'])->setPass(['id']);

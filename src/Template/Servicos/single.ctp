@@ -13,7 +13,7 @@
 
             <div class="row">
                 <div class="col-lg-12  col-md-12">
-                    <div class="text js-scroll__content">
+                    <div class="text js-scroll__content" style="text-align: justify">
                         <p class=""><?= strip_tags($single->descricao) ?></p>
                     </div>
                 </div>
