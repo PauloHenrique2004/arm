@@ -49,7 +49,7 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/empresa/:nome_empresa/:id', ['controller' => 'Empresas', 'action' => 'empresa'])->setPass(['nome_empresa','id']);
     $routes->connect('/categoria/:categoria/:id', ['controller' => 'Servicos', 'action' => 'categoria'])->setPass(['categoria','id']);
     $routes->connect('/servico/:nome/:id', ['controller' => 'Servicos', 'action' => 'single'])->setPass(['nome','id']);
-    $routes->connect('/postagem/:id', ['controller' => 'Blog', 'action' => 'post'])->setPass(['id']);
+    $routes->connect('/postagem/:title/:id', ['controller' => 'Blog', 'action' => 'post'])->setPass(['title','id']);
 
 
     /**

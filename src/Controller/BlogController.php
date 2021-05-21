@@ -151,6 +151,7 @@ class BlogController extends AppController
     public function blog(){
         $this->paginate = [
             'limit'=> 6,
+            'order' => ['id desc']
         ];
         $this->viewBuilder()->setLayout('site');
         $blog = $this->paginate($this->Blog);
@@ -164,12 +165,12 @@ class BlogController extends AppController
 
 
 
-    public function post($id)
+    public function post($title,$id)
     {
         $this->viewBuilder()->setLayout('site');
         $post = $this->Blog->get($id);
         $this->set('post', $post);
-        $recentes = $this->Blog->find('all')->order(['id DESC'])->limit(4);
+        $recentes = $this->Blog->find()->where(["Blog.id != {$id}"])->order(['id DESC'])->limit(4);
 
         $this->set('recentes', $recentes);
 

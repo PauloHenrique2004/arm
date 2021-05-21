@@ -32,20 +32,21 @@
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay=".3s" id="post-b">
                     <div class="item active bg-img" data-background="/files/Blog/photo/<?= $value->photo ?>">
                         <div class="cont">
-                            <a href="#0" class="date custom-font">
+                            <?php $link = Cake\Utility\Text::slug($value->title ) ?>
+                            <a href="/postagem/<?= $link ?>/<?= $value->id  ?>" class="date custom-font">
                                 <span><?= $value->date ?></span>
                             </a>
                             <div class="info custom-font">
-                                <a href="#0" class="author">
+                                <a href="/postagem/<?= $link ?>/<?= $value->id  ?>" class="author">
                                     <span><?= $value->title ?></span>
                                 </a>
                             </div>
                             <h6>
                                 <?php strip_tags($desc = $value->description)  ?>
-                                <a href="#0"><?= strip_tags(strlen($desc) > 50 ? substr($desc,0,50)."..." : $desc)  ?></a>
+                                <a href="/postagem/<?= $link ?>/<?= $value->id  ?>"><?= strip_tags(strlen($desc) > 50 ? substr($desc,0,50)."..." : $desc)  ?></a>
                             </h6>
                             <div class="btn-more custom-font">
-                                <a href="#0" class="simple-btn">Ver mais</a>
+                                <a href="/postagem/<?= $link ?>/<?= $value->id  ?>" class="simple-btn">Ver mais</a>
                             </div>
                         </div>
                     </div>

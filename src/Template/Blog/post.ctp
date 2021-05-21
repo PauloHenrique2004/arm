@@ -45,15 +45,16 @@
                             <?php foreach ($recentes as $recente): ?>
                                 <div class="recent-post-wrapper mb-25">
                                     <div class="recent-post-img">
-                                        <a href="/post/<?= $recente->id?>"><img  style="width: 94px; height: 94px; object-fit: cover" src="<?= "/files/Blog/photo/" . $recente->photo ?>" alt=""></a>
+                                        <?php $link = Cake\Utility\Text::slug($recente->title ) ?>
+                                        <a href="/postagem/<?= $link ?>/<?= $recente->id  ?>"><img  style="width: 94px; height: 94px; object-fit: cover" src="<?= "/files/Blog/photo/" . $recente->photo ?>" alt=""></a>
                                     </div>
                                     <div class="recent-post-content">
 
                                         <a href="#0" class="author">
-                                            <span><a href="/post/<?= $recente->id?>"><?= $recente->title ?></a></span></br>
+                                            <span><a href="/postagem/<?= $link ?>/<?= $recente->id  ?>"><?= $recente->title ?></a></span></br>
                                         </a>
 
-                                        <a href="#0" class="date custom-font">
+                                        <a href="/postagem/<?= $link ?>/<?= $recente->id  ?>" class="date custom-font">
                                             <span><?= $recente->date ?></span>
                                         </a>
                                     </div>
