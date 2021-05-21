@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-9 col-md-11 static">
                 <div class="capt text-center mt-50">
-                    <h4 class="parlx">Creativity involves breaking out of expected & repeatable patterns in order to look at things in different way than ever before.</h4>
+<!--                    <h4 class="parlx">Creativity involves breaking out of expected & repeatable patterns in order to look at things in different way than ever before.</h4>-->
 
                     <div class="bactxt custom-font valign">
                         <span class="full-width">Serviços</span>
