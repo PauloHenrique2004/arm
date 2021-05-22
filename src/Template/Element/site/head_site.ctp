@@ -8,14 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="keywords" content="HTML5 Template Avo onepage themeforest" />
-    <meta name="description" content="Avo - Onepage Multi-Purpose HTML5 Template" />
+    <meta name="description" content="Atuamos com o intuito de adequar os serviços de nossos clientes aos mais altos níveis de exigência do mercado, da legalidade e de suas próprias expectativas"/>
     <meta name="author" content="" />
+    <meta property="og:image" content="/images/logo.png"/>
 
     <!-- Title  -->
-    <title>Avo</title>
+    <title>ARM Consultorias</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/images/favicon.ico" />
+
+    <link rel="shortcut icon" href="/images/icone.png" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -29,6 +31,17 @@
 
     <!-- Core Style Css -->
     <link rel="stylesheet" href="/css/site/style.css" />
+
+    <!--start script compartilhar pagina via whatsapp-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+//conteúdo que será compartilhado: Título da página + URL
+            var conteudo = encodeURIComponent(document.title +  " " + window.location.href);
+//altera a URL do botão
+            document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
+        }, false);
+    </script>
+    <!--end script compartilhar pagina via whatsapp-->
 
 </head>
 
@@ -56,3 +69,4 @@
 <div class="mouse-cursor cursor-inner"></div>
 
 <!-- ==================== End cursor ==================== -->
+

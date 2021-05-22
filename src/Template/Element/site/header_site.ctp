@@ -4,7 +4,7 @@
     <div class="container">
 
         <!-- Logo -->
-        <a class="logo" href="#">
+        <a class="logo" href="/">
             <img src="/images/logo.png" alt="logo" style="width: 100px; margin-top: 20px; margin-bottom: 15px;">
         </a>
 
@@ -16,40 +16,41 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Início</a>
+                    <a class="nav-link" href="/">Início</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Quem somos</a>
+                    <a class="nav-link" href="/sobre-nos/5">Quem somos</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Serviços</a>
+                    <a class="nav-link" href="/servico">Serviços</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Depoimentos</a>
+                    <a class="nav-link" href="/#depoimentos">Depoimentos</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="/posts">Blog</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="/contato">Contato</a>
                 </li>
             </ul>
-            <div class="search">
-                <span class="icon pe-7s-search cursor-pointer"></span>
-                <div class="search-form text-center custom-font">
-                    <form>
-                        <input type="text" name="search" placeholder="Search">
-                    </form>
-                    <span class="close pe-7s-close cursor-pointer"></span>
-                </div>
-            </div>
+<!--            <div class="search">-->
+<!--                <span class="icon pe-7s-search cursor-pointer"></span>-->
+<!--                <div class="search-form text-center custom-font">-->
+<!--                    <form>-->
+<!--                        <input type="text" name="search" placeholder="Search">-->
+<!--                    </form>-->
+<!--                    <span class="close pe-7s-close cursor-pointer"></span>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </nav>
+
 
 <!-- ==================== End Navbar ==================== -->
