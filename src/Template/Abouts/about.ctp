@@ -1,7 +1,7 @@
 
 <!-- ==================== Start Intro ==================== -->
 
-<section class="intro-section section-padding pb-0" style="margin-top: 100px;background-image: url(/images/pattern.png); background-size: cover;background-repeat: no-repeat; ">
+<section class="intro-section section-padding pb-0" style="margin-top: 100px;background-image: url(/images/pattern.png); background-size: cover;background-repeat: no-repeat; margin-bottom: 100px ">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-4">
@@ -20,20 +20,11 @@
 </section>
 <!-- ==================== End Intro ==================== -->
 
-<div class="container" style="display: flex; justify-content: center; margin-bottom: 56px; margin-top: 20px ">
-    <div class="row">
-        <div class="col-md-12 col-lg-12">
-            <a href="/" class="btn-curve btn-color btn-radius mt-30">
-                <span>Solicitar Proposta</span>
-            </a>
-        </div>
-
-    </div>
-</div>
 
 
 
 <!-- ==================== Start Services ==================== -->
+
 
 
 <!-- ==================== End Services ==================== -->
