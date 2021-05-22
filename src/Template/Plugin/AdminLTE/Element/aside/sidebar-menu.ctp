@@ -19,16 +19,7 @@
       </span>
         </a>
     </li>
-
-    <li>
-        <a href="<?php echo $this->Url->build('/sliders/index'); ?>">
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <span>Banner</span>
-            <span class="pull-right-container">
-      </span>
-        </a>
-    </li>
-
+    
     <li>
         <a href="<?php echo $this->Url->build('/abouts/edit/5'); ?>">
             <i class="fa fa-circle-o" aria-hidden="true"></i>

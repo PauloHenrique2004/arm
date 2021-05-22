@@ -319,7 +319,8 @@
 <!-- ==================== End testimonials ==================== -->
 
 
-<!-- ==================== Start next-prog ==================== -->
+
+<!-- ==================== Start oque fazemos ==================== -->
 
 <section class="next-prog section-padding" style="background: #11141b">
     <div class="container">
@@ -352,7 +353,7 @@
     </div>
 </section>
 
-<!-- ==================== End next-prog ==================== -->
+<!-- ==================== End o que fazemos ==================== -->
 
 
 
