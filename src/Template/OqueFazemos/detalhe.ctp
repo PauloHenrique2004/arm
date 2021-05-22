@@ -7,7 +7,7 @@
             <div class="col-md-12 col-lg-9">
                 <div class="content sm-mb30">
 <!--                    <h6 class="wow" data-splitting>ARM CONSULTORIA</h6>-->
-                    <h2 class="wow custom-font" data-splitting>OQUE FAZEMOS?</h2>
+                    <h2 class="wow custom-font" data-splitting>O QUE FAZEMOS?</h2>
                 </div>
             </div>
             <div class="col-lg-12 offset-lg-12 col-md-12" class="fazemos">

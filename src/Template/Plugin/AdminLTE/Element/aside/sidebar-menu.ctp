@@ -32,29 +32,12 @@
     <li>
         <a href="<?php echo $this->Url->build('/abouts/edit/5'); ?>">
             <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <span>A Empresa</span>
+            <span>Quem somos</span>
             <span class="pull-right-container">
       </span>
         </a>
     </li>
 
-    <li>
-        <a href="<?php echo $this->Url->build('/abouts/edit/8'); ?>">
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <span>Como Funciona</span>
-            <span class="pull-right-container">
-      </span>
-        </a>
-    </li>
-
-    <li>
-        <a href="<?php echo $this->Url->build('/SobreImagens'); ?>">
-            <i class="fa fa-circle-o" aria-hidden="true"></i>
-            <span style="font-size: 12px">Imagens Sobre Nós e Como Funciona</span>
-            <span class="pull-right-container">
-      </span>
-        </a>
-    </li>
 
 
     <li class="treeview">
@@ -76,6 +59,42 @@
                     <i class="fa fa-circle"></i> Serviços imagens</a>
             </li>
         </ul>
+    </li>
+
+    <li>
+        <a href="<?php echo $this->Url->build('/depoimentos'); ?>">
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
+            <span>Depoimentos</span>
+            <span class="pull-right-container">
+      </span>
+        </a>
+    </li>
+
+    <li>
+        <a href="<?php echo $this->Url->build('/blog'); ?>">
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
+            <span>Blog</span>
+            <span class="pull-right-container">
+      </span>
+        </a>
+    </li>
+
+    <li>
+        <a href="<?php echo $this->Url->build('/videos'); ?>">
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
+            <span>Video</span>
+            <span class="pull-right-container">
+      </span>
+        </a>
+    </li>
+
+    <li>
+        <a href="<?php echo $this->Url->build('/oqueFazemos/edit/1'); ?>">
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
+            <span>O que fazemos</span>
+            <span class="pull-right-container">
+      </span>
+        </a>
     </li>
 
 </ul>

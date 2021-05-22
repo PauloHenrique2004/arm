@@ -5,7 +5,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.5
     </div>
-    <strong>&copy; Ruralize <?= date('Y') ?>. </strong> Todos os direitos reservados.
+    <strong>&copy; ARM Consultoria <?= date('Y') ?>. </strong> Todos os direitos reservados.
   <?php if (isset($layout) && $layout == 'top'): ?>
   </div>
   <?php endif; ?>

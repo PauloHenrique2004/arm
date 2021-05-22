@@ -332,7 +332,7 @@
                             <div class="o-hidden full-width">
                                 <h1>
                                     <a href="/oque-fazemos/1">
-                                        <div class="stroke">Oque fazemos</div>
+                                        <div class="stroke">O que fazemos</div>
                                     </a>
                                 </h1>
                             </div>

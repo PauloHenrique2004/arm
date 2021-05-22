@@ -67,8 +67,8 @@
                         <h5 class="blog-widget-title mb-10">SIGA-NOS</h5>
                         <div class="blog-sidebar-social">
                             <ul>
-                                <li style="margin-right: 10px"><a href="https://www.instagram.com/artedosquatrocantos/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-                                <li><a href="https://www.instagram.com/artedosquatrocantos/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                                <li style="margin-right: 10px"><a href="#"><i class="ion-social-instagram"></i></a></li>
+                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                             </ul>
                         </div>
                     </div>
