@@ -142,7 +142,7 @@
             </div>
             <div class="col-lg-6 valign">
                 <div class="content">
-                    <h4 class="wow custom-font" data-splitting>Sobre nós.</h4>
+                    <h4 class="wow custom-font" data-splitting>ARM</h4>
                     <p class="wow txt" data-splitting>Atuamos com o intuito de adequar os serviços de nossos clientes aos mais altos níveis de exigência do mercado, da legalidade e de suas próprias expectativas.
                     </p>
                     <ul class="feat">
