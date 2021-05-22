@@ -10,7 +10,7 @@
                                 <h1 data-splitting>
                                     <div class="thin">ARM SOLUÇÕES</div> Soluções
                                 </h1>
-                                <p>If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration.</p>
+                                <p>Assessoria na elaboração de Projetos de Lei, Decretos, Resoluções Portarias e Editais, Assessoria a Regionalização da Saúde...</p>
                                 <a href="/servico" class="btn-curve btn-color btn-radius mt-30">
                                     <span>Serviços</span>
                                 </a>
@@ -25,7 +25,7 @@
                                 <h1 data-splitting>
                                     <div class="thin">ARM SOLUÇÕES</div> Serviços
                                 </h1>
-                                <p>If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration.</p>
+                                <p>Assessoria na elaboração de Projetos de Lei, Decretos, Resoluções Portarias e Editais, Assessoria a Regionalização da Saúde...</p>
                                 <a href="/servico" class="btn-curve btn-color btn-radius mt-30">
                                     <span>Serviços</span>
                                 </a>
@@ -107,8 +107,8 @@
                                 <span class="custom-font">90%</span>
                             </div>
                             <div class="cont">
-                                <span>Project</span>
-                                <h6>Consulting</h6>
+                                <span>Projetos</span>
+                                <h6>Atendimento personalizado</h6>
                             </div>
                         </div>
                         <div class="item">
@@ -116,8 +116,8 @@
                                 <span class="custom-font">75%</span>
                             </div>
                             <div class="cont">
-                                <span>App</span>
-                                <h6>Development</h6>
+                                <span>ARM</span>
+                                <h6>Administração de processos</h6>
                             </div>
                         </div>
                     </div>
@@ -276,7 +276,7 @@
 
 <!-- ==================== Start testimonials ==================== -->
 
-<section class="testimonials section-padding">
+<section class="testimonials section-padding" id="depoimentos">
     <div class="container position-re">
         <div class="sec-head custom-font text-center">
             <h6 class="wow fadeIn" data-wow-delay=".5s">O que as pessoas dizem?</h6>

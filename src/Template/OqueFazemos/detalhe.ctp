@@ -1,15 +1,16 @@
 
 <!-- ==================== Start Intro ==================== -->
 
-<section class="intro-section section-padding pb-0" style="margin-top: 100px;background-image: url(/images/pattern.png); background-size: cover;background-repeat: no-repeat; ">
+<section class="call-action section-padding sub-bg bg-img" style="margin-top: 100px;background-image: url(/images/pattern.png); background-size: cover;background-repeat: no-repeat; background-color: #0c0f16  ">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-4">
-                <div class="htit sm-mb30">
-                    <h4>Oque Fazemos</h4>
+            <div class="col-md-12 col-lg-9">
+                <div class="content sm-mb30">
+<!--                    <h6 class="wow" data-splitting>ARM CONSULTORIA</h6>-->
+                    <h2 class="wow custom-font" data-splitting>OQUE FAZEMOS?</h2>
                 </div>
             </div>
-            <div class="col-lg-8 offset-lg-1 col-md-8 fazemos">
+            <div class="col-lg-12 offset-lg-12 col-md-12" class="fazemos">
                 <div class="text">
                     <p class="wow txt" data-splitting><?= $detalhe->descricao ?></p>
                 </div>
@@ -43,9 +44,4 @@
 
 <!-- ==================== End call-to-action ==================== -->
 
-<style>
-    .fazemos{
-        margin-left: 0px !important;
-        margin-bottom: 30px;
-    }
-</style>
+

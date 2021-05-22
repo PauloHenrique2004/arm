@@ -1,73 +1,101 @@
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<!--<main>-->
 
-    <!-- contact area start -->
-    <div class="contact-area pt-96 pt-sm-48 pb-100 pb-md-82 pb-sm-14">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-message">
-                        <h5>ENTRE EM CONTATO</h5>
-                        <?php echo $this->Form->create()?>
-                            <div class="row" style="margin-top: 20px">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input name="name" placeholder="Nome *" type="text" required>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input name="tel" placeholder="Telefone *" type="text" required  id="phone">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input name="email" placeholder="Email *" type="text" required>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input name="subject" placeholder="Assunto *" type="text">
-                                </div>
-                                <div class="col-12">
-                                    <div class="contact2-textarea text-center">
-                                        <textarea placeholder="Mensagem *" name="message" class="form-control2" required=""></textarea>
-                                    </div>
-                                    <div class="contact-btn">
-                                        <button class="btn btn__bg" type="submit" onclick="enviar()">Enviar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php echo $this->Form->end(); ?>
+
+<!-- ==================== Start header ==================== -->
+
+<header class="works-header fixed-slider hfixd valign">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-11 static">
+                <div class="capt mt-50">
+                    <div class="parlx">
+                        <h2 class="custom-font"><span>ARM</span>Alguma dúvida?</h2>
+                        <p>Sinta-se à vontade para me fazer qualquer pergunta ou vamos conversar sobre nossa futura colaboração</p>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info mt-md-94 mt-sm-48">
-                        <h5>INFORMAÇÕES PARA CONTATO</h5>
-                        <ul style="margin-top: 20px">
-                            <li><i class="fa fa-envelope-o"></i> neto13br@gmail.com</li>
-                            <li><i class="fa fa-phone"></i><a style="color: #666666" href="tel://">(79) 99841-5635</a></li>
-                            <li><i class="fa fa-map-marker"></i>Av. Pedro Paes Azevedo - 194 Sala 02 / Aracaju - Sergipe</li>
-                        </ul>
+
+                    <div class="bactxt custom-font valign">
+                        <span class="full-width">Contato</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- contact area end -->
-</main>
+</header>
 
-<?php $this->start('script-footer'); ?>
-<script>
-    $('#phone').mask('(00) 00000-0000')
+<!-- ==================== End header ==================== -->
 
-</script>
 
-<script>
+<!-- ==================== Start main-content ==================== -->
 
-    function enviar() {
-        swal({
-            title: "Sucesso!",
-            text: "Mensagem enviada com sucesso!",
-            icon: "success",
-            button: "OK"
-        });
-    }
-</script>
+<div class="main-content">
 
-<?php  $this->end(); ?>
+    <!-- ==================== Start Contact ==================== -->
+
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form md-mb50">
+
+                        <h4 class="extra-title mb-50">Entre em contato</h4>
+
+                        <form id="contact-form" method="post" action="contact.php">
+
+                            <div class="messages"></div>
+
+                            <div class="controls">
+
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                                </div>
+
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" placeholder="Email" required="required">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea id="form_message" name="message" placeholder="Mensagem" rows="4" required="required"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-curve btn-lit"><span>Enviar</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="cont-info">
+                        <h4 class="extra-title mb-50">Informações de contato.</h4>
+                        <h3 class="custom-font wow" data-splitting>Contato
+                        </h3>
+                        <div class="item mb-40">
+                            <h5><a href="#0">contato@armconsultorias.com</a></h5>
+                            <h5> (82) 8141-3935 </h5>
+                        </div>
+                        <h3 class="custom-font wow" data-splitting>Endereço
+                        </h3>
+                        <div class="item">
+                            <h6>Rua Eng. Mario de Gusmão no18, Shopping Lions, 1º Andar, Sala 20
+                                <br>Ponta Verde Maceió - AL CEP 57035-000</h6>
+                        </div>
+                        <div class="social mt-50">
+                            <a href="#0" class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#0" class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== End Contact ==================== -->
+
+
+</div>
+
+<!-- ==================== End main-content ==================== -->
+
 
 
