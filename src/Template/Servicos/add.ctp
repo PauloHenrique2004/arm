@@ -29,8 +29,9 @@
           <?php echo $this->Form->create($servico, ['role' => 'form']); ?>
             <div class="box-body">
               <?php
-                echo $this->Form->control('nome');
-                echo $this->Form->control('descricao');
+              echo $this->Form->control('nome');
+              echo $this->Form->control('descricao');
+              echo $this->Form->control('video');
               ?>
             </div>
             <!-- /.box-body -->

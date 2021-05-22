@@ -71,7 +71,7 @@
         <div class="container-fluid">
             <div class="video-wrapper section-padding bg-img parallaxie valign" data-background="/images/portfolio/project2/bg.jpg" data-overlay-dark="4">
                 <div class="full-width text-center">
-                    <a class="vid" href="https://vimeo.com/127203262">
+                    <a class="vid" href="<?= $single->video ?>">
                         <div class="vid-butn">
                                 <span class="icon">
                                     <i class="fas fa-play"></i>

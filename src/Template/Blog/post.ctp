@@ -11,7 +11,7 @@
                 <div class="blog-details-wrapper" style="text-align: left">
                     <div class="single-blog-wrapper">
                         <div class="blog-content">
-                            <h2><?= $post->title ?></h2>
+                            <h4><?= $post->title ?></h4>
                         </div>
 
                     </div>

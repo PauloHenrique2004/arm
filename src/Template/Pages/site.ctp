@@ -8,11 +8,11 @@
                         <div class="col-lg-6 col-md-8 offset-lg-1 offset-md-1">
                             <div class="caption">
                                 <h1 data-splitting>
-                                    <div class="thin">Unique brand</div> Stories
+                                    <div class="thin">ARM SOLUÇÕES</div> Soluções
                                 </h1>
                                 <p>If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration.</p>
-                                <a href="#0" class="btn-curve btn-color btn-radius mt-30">
-                                    <span>Discover Work</span>
+                                <a href="/servico" class="btn-curve btn-color btn-radius mt-30">
+                                    <span>Serviços</span>
                                 </a>
                             </div>
                         </div>
@@ -23,11 +23,11 @@
                         <div class="col-lg-6 col-md-8 offset-lg-1 offset-md-1">
                             <div class="caption">
                                 <h1 data-splitting>
-                                    <div class="thin">Digital Design</div>Awards
+                                    <div class="thin">ARM SOLUÇÕES</div> Serviços
                                 </h1>
                                 <p>If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration.</p>
-                                <a href="#0" class="btn-curve btn-color btn-radius mt-30">
-                                    <span>Discover Work</span>
+                                <a href="/servico" class="btn-curve btn-color btn-radius mt-30">
+                                    <span>Serviços</span>
                                 </a>
                             </div>
                         </div>
@@ -38,11 +38,11 @@
                         <div class="col-lg-6 col-md-8 offset-lg-1 offset-md-1">
                             <div class="caption">
                                 <h1 data-splitting>
-                                    <div class="thin">Original</div> Solutions
+                                    <div class="thin">ARM SOLUÇÕES</div> Saúde
                                 </h1>
-                                <p>If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration.</p>
-                                <a href="#0" class="btn-curve btn-color btn-radius mt-30">
-                                    <span>Discover Work</span>
+                                <p>Assessoria na elaboração de Projetos de Lei, Decretos, Resoluções Portarias e Editais, Assessoria a Regionalização da Saúde...</p>
+                                <a href="/servico" class="btn-curve btn-color btn-radius mt-30">
+                                    <span>Serviços</span>
                                 </a>
                             </div>
                         </div>
@@ -71,7 +71,6 @@
     </div>
     <div class="swiper-pagination custom-font"></div>
 </header>
-
 <!-- ==================== End Slider ==================== -->
 
 
@@ -94,7 +93,7 @@
                     <p class="wow fadeInUp" data-wow-delay=".4s"><?= strlen($value->descricao ) > 300 ? substr($value->descricao,0,300). "...": $value->descricao ?></p>
 
 
-                    <a href="#0" class="simple-btn custom-font mt-30 wow" data-splitting><span>Ver mais</span></a>
+                    <a href="/sobre-nos/5" class="simple-btn custom-font mt-30 wow" data-splitting><span>Ver mais</span></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -144,36 +143,46 @@
         <div class="row">
             <?php foreach ($servicos as $key => $servico): ?>
 
+            <?php $link = Cake\Utility\Text::slug($servico->nome) ?>
+
             <?php if ($key == 0):?>
+
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+                <a href="/servico/<?= $link ?>/<?= $servico->id?>">
                 <div class="step-item xtop">
                     <span><img src="/icono-logo2.png" style="width: 40%; margin-bottom: 30px;"></span>
                     <h6><?= $servico->nome ?></h6>
                    <p> <?= strlen($servico->descricao) > 70 ? substr($servico->descricao,0, 70)."..." : $servico->descricao ?></p>
                 </div>
+                </a>
             </div>
+
             <?php elseif ($key == 1): ?>
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay=".6s">
+                    <a href="/servico/<?= $link ?>/<?= $servico->id?>">
                     <div class="step-item xcolor">
                         <span><img src="/icono-logo3.png" style="width: 40%; margin-bottom: 30px;"></span>
                         <h6><?= $servico->nome ?></h6>
                         <p> <?= strlen($servico->descricao) > 70 ? substr($servico->descricao,0, 70)."..." : $servico->descricao ?></p>
                     </div>
+                    </a>
                 </div>
              <?php else: ?>
             <div class="col-lg-4 wow fadeInUp" data-wow-delay=".9s">
+                <a href="/servico/<?= $link ?>/<?= $servico->id?>">
                 <div class="step-item xbottom">
                     <span><img src="/icono-logo2.png" style="width: 40%; margin-bottom: 30px;"></span>
                     <h6><?= $servico->nome ?></h6>
                     <p> <?= strlen($servico->descricao) > 70 ? substr($servico->descricao,0, 70)."..." : $servico->descricao ?></p>
                 </div>
+                </a>
             </div>
              <?php endif; ?>
             <?php endforeach; ?>
 
         </div>
         <div class="smore custom-font">
-            <a href="#0">Ver mais</a>
+            <a href="/servico">Ver mais</a>
             <i class="fas fa-long-arrow-alt-right"></i>
         </div>
     </div>
@@ -212,7 +221,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="item">
                             <span class="icon pe-7s-date"></span>
-                            <h3 class="custom-font">+<span class="count">12</span></h3>
+                            <h3 class="custom-font">+<span class="count">15</span></h3>
                             <p class="wow txt" data-splitting>Anos de atuação</p>
                         </div>
                     </div>
@@ -311,9 +320,49 @@
 
 
 
+<!-- ==================== Start next-prog ==================== -->
+
+<section class="next-prog section-padding" style="background: #11141b">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="box">
+                    <div class="bg-img valign" data-background="/images/portfolio/project1/arm3.png" data-overlay-dark="4">
+                        <div class="caption ontop valign">
+                            <div class="o-hidden full-width">
+                                <h1>
+                                    <a href="/oque-fazemos/1">
+                                        <div class="stroke">Oque fazemos</div>
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="copy-cap valign">
+                            <div class="cap full-width">
+                                <h1>
+                                    <a href="/">
+                                        <span>Oque fazemos</span>
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== End next-prog ==================== -->
+
+
+
+
+
+
 <!-- ==================== Start Blog ==================== -->
 
-<section class="blog-grid section-padding sub-bg">
+<section class="blog-grid section-padding sub-bg" style="background: #0c0f16">
     <div class="container">
         <div class="sec-head custom-font text-center">
             <h6 class="wow fadeIn" data-wow-delay=".5s">Últimas notícias</h6>
@@ -352,3 +401,12 @@
 <!-- ==================== End Blog ==================== -->
 
 
+<style>
+    @media(min-width: 991px){
+        .step-item
+        {
+            width: 370px;
+            height: 371px;
+        }
+    }
+</style>

@@ -50,6 +50,7 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/categoria/:categoria/:id', ['controller' => 'Servicos', 'action' => 'categoria'])->setPass(['categoria','id']);
     $routes->connect('/servico/:nome/:id', ['controller' => 'Servicos', 'action' => 'single'])->setPass(['nome','id']);
     $routes->connect('/postagem/:title/:id', ['controller' => 'Blog', 'action' => 'post'])->setPass(['title','id']);
+    $routes->connect('/oque-fazemos/:id', ['controller' => 'OqueFazemos', 'action' => 'detalhe'])->setPass(['id']);
 
 
     /**

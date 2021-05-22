@@ -26,6 +26,7 @@ class Servico extends Entity
     protected $_accessible = [
         'nome' => true,
         'descricao' => true,
+        'video' => true,
         'servico_imagens' => true
     ];
 }

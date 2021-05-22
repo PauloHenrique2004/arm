@@ -1,7 +1,7 @@
 
 <!-- ==================== Start Intro ==================== -->
 
-<section class="intro-section section-padding pb-0" style="margin-top: 100px">
+<section class="intro-section section-padding pb-0" style="margin-top: 100px;background-image: url(/images/pattern.png); background-size: cover;background-repeat: no-repeat; ">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-4">
@@ -9,7 +9,7 @@
                     <h4>Quem Somos</h4>
                 </div>
             </div>
-            <div class="col-lg-8 offset-lg-1 col-md-8">
+            <div class="col-lg-8 offset-lg-1 col-md-8 fazemos">
                 <div class="text">
                     <p class="wow txt" data-splitting><?= $about->descricao ?></p>
                 </div>
@@ -75,7 +75,7 @@
                         </div>
 
                         <div class="cont" style="">
-                            <h3 class="wow" data-splitting>So that's us. There's no other way to put it.</h3>
+                            <h3 class="wow" data-splitting>Soluções em inteligência e estratégia</h3>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,6 @@
                                     <div class="cont">
                                         <div class="author">
                                             <h6 class="author-name custom-font"><?= $depoimento->cliente ?></h6>
-                                            <span class="author-details">Co-founder, Colabrio</span>
                                         </div>
                                     </div>
                                 </div>
@@ -141,8 +140,8 @@
                                     <span class="custom-font">75%</span>
                                 </div>
                                 <div class="cont">
-                                    <span>App</span>
-                                    <h6>Tecnologia a favor dos nossos clientes</h6>
+                                    <span>ARM</span>
+                                    <h6>Administração de processos</h6>
                                 </div>
                             </div>
                         </div>
@@ -248,3 +247,8 @@
 <!-- ==================== End call-to-action ==================== -->
 
 
+<style>
+    .fazemos{
+        margin-left: 0px !important;
+    }
+</style>

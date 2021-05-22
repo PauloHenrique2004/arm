@@ -53,3 +53,13 @@
     </section>
 </div>
     <!-- ==================== End works ==================== -->
+
+<style>
+    @media(min-width: 991px){
+        .step-item
+        {
+            width: 370px;
+            height: 371px;
+        }
+    }
+</style>

@@ -45,7 +45,7 @@
                   <td><?= $this->Number->format($servicoImagen->id) ?></td>
                   <td><?= h($servicoImagen->imagem) ?></td>
                   <td><?= h($servicoImagen->imagem_dir) ?></td>
-                  <td><?= $servicoImagen->has('servico') ? $this->Html->link($servicoImagen->servico->id, ['controller' => 'Servicos', 'action' => 'view', $servicoImagen->servico->id]) : '' ?></td>
+                  <td><?= $servicoImagen->has('servico') ? $this->Html->link($servicoImagen->servico->nome, ['controller' => 'Servicos', 'action' => 'view', $servicoImagen->servico->id]) : '' ?></td>
                   <td class="actions text-right">
                       <?= $this->Html->link(__('View'), ['action' => 'view', $servicoImagen->id], ['class'=>'btn btn-info btn-xs']) ?>
                       <?= $this->Html->link(__('Edit'), ['action' => 'edit', $servicoImagen->id], ['class'=>'btn btn-warning btn-xs']) ?>

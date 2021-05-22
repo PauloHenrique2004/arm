@@ -20,7 +20,7 @@ class ServicosController extends AppController
      */
     public function index()
     {
-        $servicos = $this->paginate($this->Servicos);
+        $servicos = $this->paginate($this->Servicos->find()->order(['id' => 'desc']));
 
         $this->set(compact('servicos'));
     }

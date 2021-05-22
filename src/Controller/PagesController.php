@@ -87,6 +87,7 @@ class PagesController extends AppController
 
         $servicos = $this->Servicos->find('all')->order(['id' => 'desc'])->limit(3);
         $sobre = $this->Abouts->find('all');
+        $dest = $this->Servicos->find('all');
         $sliders = $this->Sliders->find('all')->order(['id' => 'desc']);
         $blog = $this->Blog->find('all')->order(['id DESC'])->limit(3);
         $depoimentos = $this->Depoimentos->find()->order(['id DESC']);
@@ -103,6 +104,7 @@ class PagesController extends AppController
         $this->set('blog',$blog );
         $this->set('depoimentos',$depoimentos );
         $this->set('videos',$videos );
+        $this->set('dest', $dest);
         $this->set('destaques', $destaques);
         $this->set('title',$title );
 

@@ -29,9 +29,12 @@
           <?php echo $this->Form->create($servico, ['role' => 'form']); ?>
             <div class="box-body">
               <?php
+
                 echo $this->Form->control('nome');
                 echo $this->Form->control('descricao');
+                echo $this->Form->control('video');
               ?>
+
             </div>
             <!-- /.box-body -->
 
@@ -53,3 +56,16 @@
 
 </script>
 <?php  $this->end();?>
+
+<style>
+    span{
+        isplay: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    select{
+        width: 100%;
+    }
+</style>
