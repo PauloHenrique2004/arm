@@ -93,11 +93,12 @@ class PagesController extends AppController
         $depoimentos = $this->Depoimentos->find()->order(['id DESC']);
         $videos = $this->Videos->find('all')->limit(1);
         $destaques = $this->Destaques->find('all')->order(['id DESC']);
+        $title = 'Início';
 //               $nome = $this->Empresas->Servicos->find('all')->where(['Empresas.id' => 'Servicos.empresa_id']);
+
 
 //        var_dump($nomeDestaques); die();
 
-        $title = 'Início';
         $this->set('servicos', $servicos);
         $this->set('sobre', $sobre);
         $this->set('sliders', $sliders);

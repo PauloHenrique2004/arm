@@ -113,6 +113,8 @@ class AboutsController extends AppController
         $this->viewBuilder()->setLayout('site');
         $about = $this->Abouts->get($id);
         $this->set('about', $about);
+        $title = "Quem somos";
+        $this->set('title', $title);
 
         $this->loadModel('Depoimentos');
         $depoimentos = $this->Depoimentos->find('all');

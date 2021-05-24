@@ -116,12 +116,18 @@ class ServicosController extends AppController
         $this->viewBuilder()->setLayout('site');
         $servicos = $this->paginate($this->Servicos);
         $this->set('servicos', $servicos);
+
+        $title = "Serviços";
+        $this->set('title', $title);
     }
 
     public function single($nome, $id){
         $this->viewBuilder()->setLayout('site');
         $single = $this->Servicos->get($id);
         $this->set('single', $single);
+
+        $title = $nome;
+        $this->set('title', $title);
 
         $this->loadModel('ServicoImagens');
         $imagens = $this->ServicoImagens->find('all')->where(['ServicoImagens.servico_id' => $id]);

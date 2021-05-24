@@ -13,7 +13,7 @@
     <meta property="og:image" content="/images/logo.png"/>
 
     <!-- Title  -->
-    <title>ARM Consultorias</title>
+    <title><?= $title ?> | ARM Consultorias</title>
 
     <!-- Favicon -->
 

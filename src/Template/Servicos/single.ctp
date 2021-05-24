@@ -23,7 +23,8 @@
         <div class="container" style="display: flex; justify-content: center; margin-bottom: 0px; margin-top: 20px ">
             <div class="row">
                 <div class="col-md-12 col-lg-12">
-                    <a href="/" class="btn-curve btn-color btn-radius mt-30">
+
+                    <a href="<?= "https://api.whatsapp.com/send?l=pt&phone=558281413935&text=Solocito proposta {$single->name}!%0a%0ahttp://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}" ?>" class="btn-curve btn-color btn-radius mt-30">
                         <span>Solicitar Proposta</span>
                     </a>
                 </div>
@@ -108,3 +109,7 @@
              margin-left:0px ;
         }
 </style>
+
+    <?php $this->start('script-head'); ?>
+    <meta property="og:title" content="<?= $single->title ?>"/>
+    <?php $this->end(); ?>
