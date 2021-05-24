@@ -5,7 +5,7 @@
 
         <!-- Logo -->
         <a class="logo" href="/">
-            <img src="/images/logo.png" alt="logo" style="width: 100px; margin-top: 20px; margin-bottom: 15px;">
+            <img id="logo-topo" src="/images/logo.png" alt="logo" style="">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +51,21 @@
         </div>
     </div>
 </nav>
+<style>
 
+    #logo-topo{
+        width: 100px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+
+    @media screen and (max-width: 321px){
+        #logo-topo {
+            width: 75px !important;
+        }
+    }
+
+</style>
 
 <!-- ==================== End Navbar ==================== -->
