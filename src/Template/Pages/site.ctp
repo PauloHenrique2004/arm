@@ -409,4 +409,12 @@
             height: 371px;
         }
     }
+
+
+    @media (max-width: 321px) {
+        .ontop{
+            margin-top: 30px !important;
+        }
+
+    }
 </style>
