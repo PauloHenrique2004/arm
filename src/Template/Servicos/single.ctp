@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12">
 
-                    <a href="<?= "https://api.whatsapp.com/send?l=pt&phone=558281413935&text=Solícito proposta {$single->nome}!%0a%0ahttp://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}" ?>" class="btn-curve btn-color btn-radius mt-30">
+                    <a href="<?= "https://api.whatsapp.com/send?l=pt&phone=558281413935&text=Solícito a proposta {$single->nome}!%0a%0ahttp://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}" ?>" class="btn-curve btn-color btn-radius mt-30">
                         <span>Solicitar Proposta</span>
                     </a>
                 </div>
