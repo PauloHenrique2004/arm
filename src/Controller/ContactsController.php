@@ -16,13 +16,12 @@ class ContactsController extends AppController
         if ($this->request->is('post')){
             $formData = $this->request->getData();
             $email = new Email('default');
-            $email->setFrom(['contato@ruralize.com.br' => 'Ruralize'])
-                ->setTo('neto13br@gmail.com')
-                ->setSubject('Contato Ruralize')
+            $email->setFrom(['site@armconsultorias.com.br' => 'ARM Consultoria'])
+                ->setTo('contato@armconsultorias.com')
+                ->setSubject('Contato site ARM Consultoria')
                 ->send(' Nome: ' . $formData['name']
                     . "\n". ' Email: ' . $formData['email']
-                    . "\n". ' Telefone: ' . $formData['tel']
-                    . "\n". ' Assunto: ' . $formData['subject']
+                    . "\n". ' Telefone: ' . $formData['telefone']
                     . "\n". ' Mensagem: ' . $formData['message']);
         }
 

@@ -37,7 +37,7 @@
                     <div class="form md-mb50">
 
                         <h4 class="extra-title mb-50">Entre em contato</h4>
-
+                        <?php echo $this->Form->create()?>
                         <form id="contact-form" method="post" action="contact.php">
 
                             <div class="messages"></div>
@@ -46,6 +46,10 @@
 
                                 <div class="form-group">
                                     <input id="form_name" type="text" name="name" placeholder="Name" required="required">
+                                </div>
+
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="telefone" placeholder="Telefone" required="required" data-mask="(00) 00000-0000">
                                 </div>
 
                                 <div class="form-group">
@@ -59,6 +63,7 @@
                                 <button type="submit" class="btn-curve btn-lit"><span>Enviar</span></button>
                             </div>
                         </form>
+                        <?php echo $this->Form->end(); ?>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1">
@@ -96,6 +101,4 @@
 </div>
 
 <!-- ==================== End main-content ==================== -->
-
-
 
