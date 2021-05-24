@@ -126,7 +126,7 @@ class ServicosController extends AppController
         $single = $this->Servicos->get($id);
         $this->set('single', $single);
 
-        $title = $nome;
+        $title = "Serviços";
         $this->set('title', $title);
 
         $this->loadModel('ServicoImagens');
