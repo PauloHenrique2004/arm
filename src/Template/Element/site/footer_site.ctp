@@ -69,6 +69,7 @@
 <!-- jQuery -->
 <script src="/js/site/jquery-3.0.0.min.js"></script>
 <script src="/js/site/jquery-migrate-3.0.0.min.js"></script>
+<script src="/js/site/jquery.mask.js"></script>
 
 <!-- plugins -->
 <script src="/js/site//plugins.js"></script>
