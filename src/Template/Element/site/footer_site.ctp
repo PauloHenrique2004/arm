@@ -72,10 +72,10 @@
 <script src="/js/site/jquery.mask.js"></script>
 
 <!-- plugins -->
-<script src="/js/site//plugins.js"></script>
+<script src="/js/site/plugins.js"></script>
 
 <!-- custom scripts -->
-<script src="/js/site//scripts.js"></script>
+<script src="/js/site/scripts.js"></script>
 <?= $this->fetch('scriptBottom') ?>
 
 
