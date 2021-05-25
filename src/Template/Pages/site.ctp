@@ -112,8 +112,8 @@
                             </div>
                         </div>
                         <div class="item">
-                            <div class="skill" data-value="0.75">
-                                <span class="custom-font">75%</span>
+                            <div class="skill" data-value="1.00">
+                                <span class="custom-font">100%</span>
                             </div>
                             <div class="cont">
                                 <span>ARM</span>
