@@ -276,7 +276,7 @@ $(function() {
         loop: true,
         effect: 'fade',
         autoplay: {
-            delay: 2500,
+            delay: 4000,
             disableOnInteraction: false
         },
 
@@ -292,7 +292,7 @@ $(function() {
         speed: 800,
         loop: true,
         autoplay: {
-            delay: 2500,
+            delay: 4000,
             disableOnInteraction: false
         },
 
@@ -548,7 +548,7 @@ $(window).on("load", function() {
     var imageDown = document.getElementsByClassName('thumparallax-down');
     new simpleParallax(imageDown, {
         orientation: 'down',
-        delay: 1,
+        delay: 4,
         scale: 1.1
     });
 
