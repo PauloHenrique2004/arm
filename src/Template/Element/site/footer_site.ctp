@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-5">
                 <div class="cont">
-                    <div class="logo">
+                    <div class="logo" style="display: none">
                         <a href="/">
                             <img style="width: auto; max-height: 140px" src="/images/logo.png" alt="">
                         </a>
@@ -21,10 +21,10 @@
                     <div class="social-icon">
                         <h6 class="custom-font stit simple-btn">Siga-nos</h6>
                         <div class="social">
-                            <a href="#0" class="icon">
+                            <a href="#0" class="icon" style="color: #3b5998; font-size: 22px">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#0" class="icon">
+                            <a href="#0" class="icon" style="color: #eb8b2d; font-size: 22px">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
