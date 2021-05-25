@@ -212,7 +212,7 @@
             </div>
 
             <div class="col-md-4 col-lg-3 valign">
-                <a href="contact.html" class="btn-curve btn-lit"><span>Entre em contato</span></a>
+                <a href="/contato" class="btn-curve btn-lit"><span>Entre em contato</span></a>
             </div>
 
         </div>
