@@ -102,4 +102,5 @@
 <?php $this->start('scriptBottom'); ?>
 <meta property="og:image" content="https://<?= $_SERVER['HTTP_HOST'] . "/files/Blog/photo/thumb-" . $post->photo ?>"/>
 <meta property="og:title" content="<?= $post->title ?>"/>
+<meta name="description" content="<?= strlen($post->description) > 50 ? substr($post->description,0,50)."..." : $post->description?>"/>
 <?php $this->end(); ?>
