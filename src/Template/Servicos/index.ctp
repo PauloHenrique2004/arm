@@ -57,4 +57,13 @@
       <!-- /.box -->
     </div>
   </div>
+    <div class="paginator">
+        <ul class="pagination">
+            <?php echo $this->Paginator->first('<< ' . __('Primeira')); ?>
+            <?php echo $this->Paginator->prev('< ' . __('Anterior')); ?>
+            <?php echo $this->Paginator->numbers(); ?>
+            <?php echo $this->Paginator->next(__('Próximo') . ' >'); ?>
+            <?php echo $this->Paginator->last(__('Última') . ' >>'); ?>
+        </ul>
+    </div>
 </section>

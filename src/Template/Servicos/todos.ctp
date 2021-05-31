@@ -49,6 +49,19 @@
                 <?php endforeach; ?>
                  </a>
             </div>
+
+
+            <div class="paginator">
+                <ul class="pagination">
+                    <?php echo $this->Paginator->prev('< ' . __('Anterior')); ?>
+                    <?php echo $this->Paginator->numbers(); ?>
+                    <?php echo $this->Paginator->next(__('Próximo') . ' >'); ?>
+                </ul>
+            </div>
+
+
+
+
         </div>
     </section>
 </div>
@@ -61,5 +74,39 @@
             width: 370px;
             height: 371px;
         }
+    }
+
+
+    .active a{
+
+             color: #11141b  !important;
+          background-color: #eb8b2d  !important;
+
+         }
+
+   .pagination li a{
+
+        position: relative !important;
+        display: block  !important;
+        padding: .5rem .75rem  !important;
+        margin-left: -1px  !important;
+        line-height: 1.25  !important;
+        color: #fff ;
+        background-color: #11141b;
+        border: 1px solid #dee2e6  !important;
+
+    }
+
+
+
+    pagination li a {
+        position: relative !important;
+        display: block !important;
+        padding: .5rem .75rem !important;
+        margin-left: -1px !important;
+        line-height: 1.25 !important;
+        color: #007bff !important;
+        background-color: #fff !important;
+        border: 1px solid #dee2e6 !important;
     }
 </style>
