@@ -110,7 +110,7 @@ class ServicosController extends AppController
 
     public function todos(){
         $this->paginate = [
-            'limit'=> 3,
+            'limit'=> 6,
             'order' => ['id desc']
         ];
         $this->viewBuilder()->setLayout('site');
