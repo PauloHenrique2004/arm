@@ -38,7 +38,7 @@
                 <?php foreach ($servicos as $key => $servico): ?>
                         <?php $link = Cake\Utility\Text::slug($servico->nome) ?>
                         <div class="col-lg-4 wow fadeInUp" data-wow-delay=".6s">
-                            <a href="/servico/<?= $link ?>/<?= $servico->id?>">
+                            <a style="min-width: 100%" href="/servico/<?= $link ?>/<?= $servico->id?>">
                             <div class="step-item xcolor">
                                 <span><img src="/icono-logo3.png" style="width: 40%; margin-bottom: 30px;"></span>
                                 <h6><?= $servico->nome ?></h6>
