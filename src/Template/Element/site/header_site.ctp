@@ -5,7 +5,7 @@
 
         <!-- Logo -->
         <a class="logo" href="/">
-            <img id="logo-topo" src="/images/logo.png" alt="logo" style="">
+            <img class="logo-topo" src="/images/logo.png" alt="logo" style="">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
 </nav>
 <style>
 
-    #logo-topo{
+    .logo-topo{
         width: 100px;
         margin-top: 20px;
         margin-bottom: 15px;
@@ -61,11 +61,28 @@
 
 
     @media screen and (max-width: 321px){
-        #logo-topo {
+        .logo-topo {
             width: 75px !important;
         }
     }
 
+    .logo-small{
+        width: 50px;
+    }
+
 </style>
+
+
+<?php $this->start('scriptBottom'); ?>
+<script>
+    $(document).on("scroll", function () {
+        if($(document).scrollTop() > 100){
+            $("nav-scroll").removeClass("logo-topo").addClass("logo-small");
+        }else {
+            $("logo").removeClass("logo-small").addClass("logo-topo")
+        }
+    })
+</script>
+<?php $this->end() ?>
 
 <!-- ==================== End Navbar ==================== -->

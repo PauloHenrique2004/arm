@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx" style="overflow: auto">
+<html lang="pt-br" style="overflow: auto">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="keywords" content="HTML5 Template Avo onepage themeforest" />
     <meta name="description" content="Atuamos com o intuito de adequar os serviços de nossos clientes aos mais altos níveis de exigência do mercado, da legalidade e de suas próprias expectativas"/>
-    <meta name="author" content="" />
+    <meta name="author" content="wetech.com.br" />
     <meta property="og:image" content="/images/logo.png"/>
 
     <!-- Title  -->
